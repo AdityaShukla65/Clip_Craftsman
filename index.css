@@ -1,0 +1,542 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',Arial, Courier, monospace;
+}
+:root{
+    --blackish:#1f2833;
+    --creamish:#ffffff;
+}
+.white{
+    background-color:var(--creamish);
+    color:var(--blackish);
+}
+.black{
+    background-color:var(--blackish);
+    color:var(--creamish);
+}
+.header{
+    padding:0.25rem 1.5rem;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    position:sticky;
+    z-index:999;
+}
+.logo{
+    width:40%;
+    padding-left:3.8rem
+}
+.logo img{
+    height:3.2rem;
+    width:auto;
+}
+.header ul{
+    list-style:none;
+    display:flex;
+    width:60%;
+}
+.list i{
+    display:none;
+    margin:0.4rem 0rem 0rem 8.5rem;
+    font-size:2rem;
+    color:var(--blackish);
+    cursor:pointer;
+}
+.header li{
+    margin:0.6rem 0rem 0rem 3rem;
+    font-size:1.2rem;
+}
+.header li a{
+    text-decoration: none;
+    color:var(--blackish);
+    transition: font-weight 0.75s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.header li a:hover{
+    font-weight: 600;
+}
+.body1{
+    padding:5rem 6rem;
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-gap:1rem;
+}
+.body1 .lbody h2{
+    font-weight:400;
+    font-size:2.25rem;
+}
+.body1 .lbody h1{
+    font-size: 3.5rem;
+}
+.body1 .lbody h1:nth-child(3){
+    font-weight: 400;
+    margin-top:-0.3rem;
+}
+.body1 .lbody p{
+    width:50%;
+}
+.body1 .lbody button{
+    margin-top:1.5rem;
+    border:0.1rem solid var(--blackish);
+    border-radius:2rem;
+    background-color:transparent;
+    font-weight:bold;
+    padding:0.2rem 1.5rem;
+    cursor: pointer;
+    transition:0.5s;
+}
+.body1 .lbody button a{
+    text-decoration: none;
+    color:var(--blackish);
+}
+.body1 .lbody button:hover a{
+    color:var(--creamish);
+}
+.body1 .lbody button:hover{
+    background-color:var(--blackish);
+}
+.body1 .rbody{
+    width:60%;
+}
+.body1 .rbody img{
+    width:20rem;
+    border:0.2rem solid var(--blackish);
+    border-radius:2rem;
+    cursor:pointer;
+    transition:transform 0.75s;
+    margin-right:5rem;
+}
+.body1 .rbody img:hover{
+    transform: rotate(15deg);
+}
+.body1 .lower{
+    display:flex;
+    grid-column:span 2;
+    margin-top:2rem;
+}
+.body1 .lower div{
+    display:flex;
+    margin-left:5rem;
+    width:15rem;
+}
+.body1 .lower div p:nth-child(1){
+    font-weight:bold;
+    font-size:3.5rem;
+    margin-right:1.5rem;
+}
+.body1 .lower div p:nth-child(2){
+    font-size:1.5rem;
+}
+.body2{
+    padding:5rem 6rem;
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-gap:1rem;
+}
+.body2 .lbody{
+    width:80%;
+}
+.body2 .lbody hr{
+    margin:1.2rem 0rem;
+    width:15%;
+    border:0.1rem solid var(--creamish);
+    border-radius:1rem;
+}
+.body2 .lbody .services{
+    margin-top:2rem;
+    font-size:1.25rem;
+    cursor:pointer;
+    transition:font-weight 0.75s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.body2 .lbody .services:hover{
+    font-weight:600;
+}
+.body2 .rbody .skill{
+    margin-right:1.2rem;
+}
+.body2 .rbody .skill img{
+    width:3.8rem;
+}
+.body2 .rbody .skill .image-container {
+    padding:1.2rem;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor:pointer;
+}
+
+.body2 .rbody .skill .image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 0.2rem solid var(--creamish);
+    transition: transform 0.3s ease; /* Transition for smooth animation */
+    z-index: 0; /* Make sure the pseudo-element is behind the content */
+}
+.flex{
+    display:flex;
+    margin-bottom:2rem;
+}
+.body2 .rbody .skill .image-container:hover::before {
+    transform: rotate(45deg);
+}
+.body2 .rbody .skill h3{
+    margin:1rem 0rem;
+}
+.body2 .lower{
+    grid-column:span 2;
+    text-align: center;
+    margin-top:3rem
+}
+.body2 .lower .modify{
+    width:75%;
+    margin:2rem auto;
+    text-align: center;
+}
+.body2 .lower .softwares{
+    display:flex;
+    justify-content: space-between;
+}
+.body2 .lower .softwares img{
+    width:5rem;
+}
+
+.body2 .lower .softwares div div{
+    background-color: #67809957;
+    border-radius:1rem;
+    padding:1rem 1.8rem;
+    margin-bottom:0.5rem;
+    cursor:pointer;
+}
+.body3{
+    text-align:center;
+    padding:3rem 5rem
+}
+.body3 p{
+    width:60%;
+    margin:1rem auto;
+    text-align: center;
+}
+.body3 .work ul{
+    margin:2rem auto;
+    text-align: center;
+    width:20%;
+    display:flex;
+    list-style:none;
+    justify-content: space-between;
+}
+.body3 .work ul li a{
+    text-decoration:none;
+    color:var(--blackish);
+}
+.body3 .work ul li a:hover{
+    font-weight:600;
+}
+.roller {
+    width: 100%;
+    overflow: hidden;
+}
+
+.videos-container {
+    height: 17.8rem;
+    display: flex;
+    width: 200%; /* Double the width to accommodate duplicates */
+    animation: slideVideos 120s linear infinite; /* Adjust duration as needed */
+}
+
+.videos-container iframe {
+    flex: 1;
+    width: calc(100% / 3); /* Adjust width based on number of videos */
+}
+
+@keyframes slideVideos {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); } /* Adjust distance based on number of videos */
+}
+.btn{
+    display: block;
+    font-size:1.2rem;
+    opacity:100%;
+    width:16rem;
+    background-color:var(--blackish);
+    color:var(--creamish);
+    padding:1rem 2rem;
+    cursor:pointer;
+}
+.body5{
+    text-align: center;
+    margin:2rem auto;
+    padding:1rem 3rem;
+}
+.body5 .display{
+    display: flex;
+}
+.body5 h3{
+    font-weight: 400;
+    font-size:1.5rem;
+    margin:2rem 0rem;
+}
+.body5 .display .left{
+    margin-left:3rem;
+    text-align:left;
+}
+.body5 .display .right{
+    text-align:left;
+    margin-left:30rem;
+}
+.body5 .display button{
+    margin:1.2rem 0rem
+}
+.mained{
+    color:var(--creamish);
+    text-decoration:none;
+}
+input, textarea{
+    opacity:30%;
+    border:none;
+    border-bottom:0.1rem solid var(--blackish);
+    width:30rem;
+    margin-bottom:1rem;
+}
+
+.social{
+    display:flex;
+}
+.social img{
+    height:2rem;
+    margin-left:1rem;
+}
+
+.footer{
+    text-align: center;
+    padding:1rem 5em;
+}
+.collage{
+    padding:3rem 1rem;
+}
+#video1, #video2{
+    height:24rem;
+}
+#video3{
+    width:32rem;
+    height: 25rem;
+}
+#video4{
+    width:45rem;
+    height:30rem;
+}
+#video5{
+    margin-bottom:17.5rem;
+}
+#video6{
+    height:15rem;
+    width:25rem;
+}
+#video7, #video8{
+    height:10rem;
+    width:8rem;
+}
+#video9 {
+    height:26rem;
+}
+.body4{
+    padding:5rem 6rem;
+}
+.body4 .lower{
+    display:flex;
+}
+.body4 .lower div.flexed{
+    display:flex;
+}
+.body4 .lower div.short{
+    width:40%;
+    margin-right:5rem;
+}
+.body4 .lower div.short h2{
+    font-size:2rem;
+    margin-bottom:1rem;
+}
+.body4 .lower .review{
+    margin-left:1rem;
+    border-radius:2rem;
+    height:25rem;
+    width:20rem;
+    padding:2rem;
+}
+.body4 .lower .review div{
+    display:flex;
+}
+.body4 .lower .review h4{
+    font-size:1.5rem;
+}
+.body4 .lower .review div img{
+    border-radius:10rem;
+    height:5rem;
+    margin-left:10rem;
+    margin-top:0rem;
+    cursor:pointer;
+}
+.body4 .lower .review img{
+    height:2rem;
+    margin:2rem 0rem 2rem 0rem
+}
+
+
+
+
+
+@media only screen and (max-width:768px){
+    .header{
+        position:relative;
+    }
+    .logo{
+        padding:0;
+    }
+    .header ul{
+        display:none;
+        width:100%;
+        background-color:var(--blackish);
+        height:25rem;
+        z-index:1000;
+        padding: 2rem 2.9rem;
+    }
+    .header li{
+        font-size:2rem;
+    }
+    .header li a{
+        color:var(--creamish);
+        text-align: center;
+    }
+    .list #burger{
+        display:block;
+    }
+    .list #cross{
+        color:var(--creamish);
+        margin:-28rem 0rem 0rem 19rem;
+    }
+    .body1{
+        display:block;
+        padding:2.1rem;
+    }
+    .body1 .lbody{
+        width:100%;
+    }
+    .body1 .lbody h2{
+        font-size:1.5rem;
+    }
+    .body1 .lbody h1{
+        font-size: 2rem;
+    }
+    .body1 .lower{
+        display:none;
+    }
+    .body1 .lbody p{
+        margin-top:1rem;
+        width:100%;
+    }
+    .body1 .rbody img{
+        width:15rem;
+        margin:2rem 0rem 0rem 1.5rem;
+    }
+    .body2{
+        display:block;
+        padding:3rem 0rem 2rem 2rem;
+
+    }
+    .flex{
+        display:block;
+    }
+    .body2 .lower .softwares{
+        display:block;
+    }
+    .body2 .lower .modify{
+        width:100%;
+        margin:2rem 0rem;
+    }
+    .body2 .rbody .skill .image-container {
+        margin-top:2rem;
+    }
+    .body2 .lbody .services{
+        margin-bottom:1rem;
+    }
+    .body2 .lower .softwares div div{
+        width:30%;
+        margin:2rem auto;
+    }
+    .body2 .lower .modify{
+        width:100%;
+        margin:2rem 0rem 2rem -1rem;
+    }
+    .body2 .lower h2{
+        margin:2rem 0rem 0rem -1rem
+    }
+    .body3 p{
+        width:100%;
+    }
+    .body3 .work ul{
+        width:100%;
+    }
+    .body3{
+        padding:3rem 2rem
+    }
+    .roller{
+        display:none;
+    }
+    .body5{
+        margin:0rem;
+        padding:2.8rem 0rem;
+    }
+    .body5 .display{
+        display: block;
+    }
+    input, textarea{
+        width:15rem
+    }
+    .body5 .display .right{
+        margin:2rem 2.8rem;
+    }
+    .footer{
+        padding:1rem;
+    }
+    #video2, #video3, #video7, #video6, #video9{
+        display:none;
+    }
+    #video1, #video4, #video5, #video8{
+        width:100%;
+        height:100%;
+        margin:0;
+    }
+    #video1, #video8{
+        width:15rem;
+        height:30rem;
+    }
+    .body4{
+        padding:3rem 2rem;
+    }
+    .body4 .lower{
+        display:block;
+    }
+    .body4 .lower div.flexed{
+        display:block;
+    }
+    .body4 .lower div.short{
+        width:100%;
+        margin:0rem 0rem 2rem 0rem
+    }
+    .body4 .lower .review{
+        width:13rem;
+        height:30rem;
+        margin-bottom:2rem;
+    }
+    .body4 .lower .review div img{
+        margin-left:2rem;
+    }
+    .body1 .lbody{
+        width:80%;
+    }
+}
