@@ -385,7 +385,13 @@ input, textarea{
     height:2rem;
     margin:2rem 0rem 2rem 0rem
 }
-
+.services a{
+    text-decoration: none;
+    color:white;
+}
+.softwares div:hover{
+    opacity:90%;
+}
 
 
 

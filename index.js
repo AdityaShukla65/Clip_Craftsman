@@ -28,6 +28,22 @@ document.addEventListener("DOMContentLoaded", function() {
         backSpeed:150,
         loop:true
     })
+    // Function to handle smooth scrolling
+    function scrollToElement(element) {
+        const topOffset = element.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+            behavior: 'smooth',
+            top: topOffset
+        });
+    }
+
+    // Function to handle click event on anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+            scrollToElement(target);
+        });
+    });
 });
-
-
